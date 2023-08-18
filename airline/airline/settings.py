@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DEFAULT_STORAGE_ALIAS = 'default'
+
+
 
 # Application definition
 
 INSTALLED_APPS = [
+    "users",
     "flights",
     "django.contrib.admin",
     "django.contrib.auth",
