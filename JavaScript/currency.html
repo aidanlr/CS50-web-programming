@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Currency Exchange</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+
+                const API_KEY = "0c5cd8d53bd1a43dfd5a5fe058ee15c6";
+
+                fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}&base=USD`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
